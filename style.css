@@ -1,0 +1,149 @@
+:root {
+    --light-clr: #F2F2F2;
+    --white-clr: #fff;
+    --fw-reg: 400;
+    --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: grid;
+    place-items: center;
+    background: var(--light-clr);
+}
+
+/* General */
+
+h2, p {
+    margin: 0;
+}
+
+.card__name {
+    font-size: 1.125rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: .5em;
+}
+
+.card__age {
+    color: #6B7082;
+    font-size: 1.125rem;
+    font-weight: var(--fw-reg);
+    margin-left: .472em;
+}
+
+.card__country {
+    color: #6B7082;
+    font-size: .875rem;
+}
+
+.card__title {
+    font-size: 1.125rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: .5em;
+}
+
+.card__text {
+    color: #6B7082;
+    font-size: .625rem;
+    letter-spacing: 0.09375rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.card__avatar {
+    width: 96px;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+/* Layouts */
+
+.main {
+    background-color: #19A1AE;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+}
+
+.container {
+    width: 100%;
+    min-width: 375px;
+}
+
+.card {
+    width: 100%;
+    max-width: 326px;
+    background-color: var(--white-clr);
+    margin: 0 auto;
+    padding: 0 0 1.5em 0;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card__avatar-wrapper {
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 140px;
+    position: relative;
+}
+
+.card__info-wrapper {
+    margin-block: 4.5em .5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #E8E9EC;
+}
+
+.card__contents-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-inline: auto;
+}
+
+.card__content {
+    flex: 1;
+}
+
+/* Footer */
+
+.footer {
+    background: #F2F2F2;
+    opacity: .9;
+    padding: 2em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
