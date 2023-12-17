@@ -63,6 +63,7 @@ img {
 
 .card__avatar {
     width: 96px;
+    height: 96px;
     margin: 0 auto;
     border: 5px solid #fff;
     border-radius: 50%;
