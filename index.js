@@ -8,7 +8,7 @@ const data = [
         text: "Likes"
     },
     {
-        title: "80K",
+        title: "1.4K",
         text: "Photos"
     }
 ];
